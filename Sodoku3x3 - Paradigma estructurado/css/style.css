@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    margin: 0%;
+}
+
+main{
+    height: 200px;
+    width: 200px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+main div{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disable{
+    background-color: darkgreen;
+}
+
+.red{
+    background-color: red;
+}

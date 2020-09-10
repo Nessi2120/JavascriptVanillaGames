@@ -1,0 +1,27 @@
+.squard{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    position: relative;
+}
+
+.squard__hidden{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+.squard__hidden:hover{
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.squard__hidden:active{
+    box-shadow: inset 0 0 10px #db9999;
+
+}
+
+.squard__hidden--hidden{
+    display: hidden;
+}

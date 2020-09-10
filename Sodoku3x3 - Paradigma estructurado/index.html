@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="desboard">
+        <div id="0" data-x="0" data-y="0"></div>
+        <div id="1" data-x="0" data-y="1"></div>
+        <div id="2" data-x="0" data-y="2"></div>
+        <div id="3" data-x="1" data-y="0"></div>
+        <div id="4" data-x="1" data-y="1"></div>
+        <div id="5" data-x="1" data-y="2"></div>
+        <div id="6" data-x="2" data-y="0"></div>
+        <div id="7" data-x="2" data-y="1"></div>
+        <div id="8" data-x="2" data-y="2"></div>
+        <div id="cartel">
+            <p> YOU WIN</p>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script>
+        
+        const sodokuDesboard = [[],[],[]]
+
+        const casilla00 = document.getElementById("0") 
+        sodokuDesboard[0][0] = { value : 1, element : casilla00, disable : true}
+
+        const casilla01 = document.getElementById("1")
+        sodokuDesboard[0][1] = { value : 0, element : casilla01,  disable : false}
+
+        const casilla02 = document.getElementById("2") 
+        sodokuDesboard[0][2] = { value : 3, element : casilla02,  disable : true}
+
+        const casilla10 = document.getElementById("3") 
+        sodokuDesboard[1][0] = { value : 0, element : casilla10,  disable : false }
+
+        const casilla11 = document.getElementById("4") 
+        sodokuDesboard[1][1] = { value : 1, element : casilla11, disable : true}
+
+        const casilla12 = document.getElementById("5") 
+        sodokuDesboard[1][2] = { value : 0, element : casilla12,  disable : false}
+
+        const casilla20 = document.getElementById("6") 
+        sodokuDesboard[2][0] = { value : 0, element : casilla20,  disable : false}
+
+        const casilla21 = document.getElementById("7") 
+        sodokuDesboard[2][1] = { value : 0, element : casilla21,  disable : false}
+
+        const casilla22 = document.getElementById("8") 
+        sodokuDesboard[2][2] = { value : 0, element : casilla22,  disable : false}
+
+        BindStructereToView(sodokuDesboard)
+
+        document.addEventListener("click", function(event){
+            Add(event, sodokuDesboard)
+        })
+
+    </script>
+
+</body>
+</html>
