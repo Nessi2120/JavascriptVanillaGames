@@ -13,8 +13,8 @@ main{
 }
 
 main div{
-    height: 50px;
-    width: 50px;
+    height: 100%;
+    width: 100%;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -27,4 +27,8 @@ main div{
 
 .red{
     background-color: red;
+}
+
+.green{
+    background-color: green;
 }

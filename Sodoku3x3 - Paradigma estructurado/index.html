@@ -25,16 +25,16 @@
     <script src="js/script.js"></script>
     <script>
         
-        const sodokuDesboard = [[],[],[]]
+        /* const sodokuDesboard = [[],[],[]]
 
         const casilla00 = document.getElementById("0") 
-        sodokuDesboard[0][0] = { value : 1, element : casilla00, disable : true}
+        sodokuDesboard[0][0] = { value : 0, element : casilla00, disable : false}
 
         const casilla01 = document.getElementById("1")
         sodokuDesboard[0][1] = { value : 0, element : casilla01,  disable : false}
 
         const casilla02 = document.getElementById("2") 
-        sodokuDesboard[0][2] = { value : 3, element : casilla02,  disable : true}
+        sodokuDesboard[0][2] = { value : 3, element : casilla02,  disable : false}
 
         const casilla10 = document.getElementById("3") 
         sodokuDesboard[1][0] = { value : 0, element : casilla10,  disable : false }
@@ -54,12 +54,24 @@
         const casilla22 = document.getElementById("8") 
         sodokuDesboard[2][2] = { value : 0, element : casilla22,  disable : false}
 
-        BindStructereToView(sodokuDesboard)
+        BindStructureToView(sodokuDesboard)
 
-        document.addEventListener("click", function(event){
-            Add(event, sodokuDesboard)
-        })
+        BindViewToStructure(sodokuDesboard) */
 
+        const elementList = [
+            document.getElementById("0"),
+            document.getElementById("1"),
+            document.getElementById("2"),
+            document.getElementById("3"),
+            document.getElementById("4"),
+            document.getElementById("5"),
+            document.getElementById("6"),
+            document.getElementById("7"),
+            document.getElementById("8"),
+            document.getElementById("9")
+        ]
+
+        StartGame(elementList)
     </script>
 
 </body>
